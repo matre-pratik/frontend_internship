@@ -1,0 +1,114 @@
+body {
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+}
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+nav {
+  background: white;
+  padding: 15px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+nav a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #4b79a1;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #283e51;
+}
+
+.internship {
+  background: white;
+  width: 90%;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+.internship h2 {
+  color: #4b79a1;
+  margin-bottom: 10px;
+}
+.internship .info p {
+  margin: 5px 0;
+}
+.internship .info p span {
+  font-weight: bold;
+  color: #283e51;
+}
+.internship .note {
+  margin-top: 10px;
+  background: rgb(189.8495762712, 208.4639830508, 224.6504237288);
+  padding: 15px;
+  border-left: 4px solid #4b79a1;
+  border-radius: 10px;
+}
+.internship .note strong {
+  color: #4b79a1;
+}
+
+.progress-tracker {
+  width: 90%;
+  background: white;
+  margin: 25px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+.progress-tracker h2 {
+  color: #4b79a1;
+  margin-bottom: 15px;
+}
+.progress-tracker .task {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #f0f4ff;
+  border-left: 5px solid #4b79a1;
+  margin: 8px 0;
+  border-radius: 10px;
+}
+.progress-tracker .task.completed {
+  background: #e7ffe7;
+  border-left: 5px solid green;
+}
+.progress-tracker .task.completed span {
+  color: green;
+}
+.progress-tracker .task span {
+  font-weight: bold;
+}
+
+footer {
+  background: #283e51;
+  color: white;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

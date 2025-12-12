@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* header  */
+header {
+  background-color: #4b79a1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* form container  */
+.form-container {
+  background-color: white;
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #4b79a1;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #4b79a1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(75, 121, 161, 0.5);
+}
+
+button {
+  width: 100%;
+  background-color: #4b79a1;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #355c7d;
+}
+
+#message {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* footer  */
+footer {
+  background-color: #4b79a1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}

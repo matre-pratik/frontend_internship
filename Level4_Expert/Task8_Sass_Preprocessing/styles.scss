@@ -1,0 +1,147 @@
+// variables
+$primary-color: #4b79a1;
+$secondary-color: #283e51;
+$text-color: #333;
+$radius: 10px;
+
+// Mixin
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// body
+body {
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+  color: $text-color;
+}
+
+// Header
+.header {
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: $radius;
+  margin: 20px auto;
+  width: 90%;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+}
+
+// Navbar
+nav {
+  background: white;
+  padding: 15px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: $radius;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+
+  a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: $primary-color;
+    font-weight: bold;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Internship details
+.internship {
+  background: white;
+  width: 90%;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: $radius;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 10px;
+  }
+
+  .info {
+    p {
+      margin: 5px 0;
+
+      span {
+        font-weight: bold;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .note {
+    margin-top: 10px;
+    background: lighten($primary-color, 35%);
+    padding: 15px;
+    border-left: 4px solid $primary-color;
+    border-radius: $radius;
+
+    strong {
+      color: $primary-color;
+    }
+  }
+}
+
+// Progress tracker
+.progress-tracker {
+  width: 90%;
+  background: white;
+  margin: 25px auto;
+  padding: 20px;
+  border-radius: $radius;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 15px;
+  }
+
+  .task {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background: #f0f4ff;
+    border-left: 5px solid $primary-color;
+    margin: 8px 0;
+    border-radius: $radius;
+
+    &.completed {
+      background: #e7ffe7;
+      border-left: 5px solid green;
+
+      span {
+        color: green;
+      }
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+// foooter
+footer {
+  background: $secondary-color;
+  color: white;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  border-radius: $radius;
+}

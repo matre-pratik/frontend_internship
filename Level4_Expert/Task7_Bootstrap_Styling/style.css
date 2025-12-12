@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #4b79a1 !important;
+  letter-spacing: 1px;
+}
+.badge {
+  background-color: #ffca2c;
+  color: #333;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+.badge:active {
+  transform: scale(1.3);
+}
+
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to right, #4b79a1, #283e51);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.hero .btn {
+  margin-top: 20px;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.hero .btn:hover {
+  background-color: #ffca2c;
+}
+
+/* Product */
+.product-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.card-img-top{
+  height: 250px;
+  width: 100%;
+  border-bottom: 1px solid rgba(77, 72, 72, 0.815);
+}
+.price {
+  font-weight: 600;
+  color: #4b79a1;
+}
+
+/* Features */
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* review  */
+.review {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.review:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background-color: #283e51;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 600;
+}
+footer a:hover {
+  color: #fff;
+}

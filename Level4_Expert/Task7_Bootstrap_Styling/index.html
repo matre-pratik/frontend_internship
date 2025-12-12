@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase - Home Page</title>
+
+    <!-- style.css  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">ShopEase</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn btn-outline-primary position-relative"
+                id="cartBtn"
+                data-bs-toggle="modal"
+                data-bs-target="#cartModal"
+              >
+                Cart
+                <span
+                  class="badge rounded-pill position-absolute top-0 start-100 translate-middle"
+                  id="cartCount"
+                  >0</span
+                >
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Shop Smarter with ShopEase</h1>
+        <p>Premium Products • Great Deals • Fast Delivery</p>
+        <a href="#products" class="btn btn-warning">Start Shopping</a>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-5" id="products">
+      <div class="container text-center">
+        <h2 class="fw-bold text-primary mb-4">Our Popular Products</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="./images/1.jpg"
+                class="card-img-top"
+                alt="Smart Watch"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Smart Watch</h5>
+                <p class="card-text">
+                  Track your fitness and stay connected in style.
+                </p>
+                <p class="price">₹2,499</p>
+                <button class="btn btn-primary w-100 addCartBtn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="./images/2.jpg"
+                class="card-img-top"
+                alt="Wireless Earphones"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Wireless Earphones</h5>
+                <p class="card-text">
+                  Featuring long-lasting battery life and comfortable design. 
+                </p>
+                <p class="price">₹1499</p>
+                <button class="btn btn-primary w-100 addCartBtn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="./images/3.jpg"
+                class="card-img-top"
+                alt="Power Bank"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Power Bank</h5>
+                <p class="card-text">
+                  Featuring high-capacity battery and compact design.
+                </p>
+                <p class="price">₹999</p>
+                <button class="btn btn-primary w-100 addCartBtn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="./images/4.jpg"
+                class="card-img-top"
+                alt="Smart Home Speaker"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Smart Home Speaker</h5>
+                <p class="card-text">
+                  Featuring voice assistant integration and sleek design.
+                </p>
+                <p class="price">₹3499</p>
+                <button class="btn btn-primary w-100 addCartBtn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="images/5.jpg"
+                class="card-img-top"
+                alt="Sunglasses"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sunglasses</h5>
+                <p class="card-text">
+                  Featuring UV protection and trendy design.
+                </p>
+                <p class="price">₹999</p>
+                <button class="btn btn-primary w-100 addCartBtn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card product-card">
+              <img
+                src="./images/6.jpg"
+                class="card-img-top"
+                alt="Wireless Router"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Wireless Router</h5>
+                <p class="card-text">
+                  Featuring fast Wi-Fi speeds and range up to 2000 sqrt.
+                </p>
+                <p class="price">₹2,999</p>
+                <button class="btn btn-primary w-100 addCartBtn">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cart Modal (after click on cart botton) -->
+      <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Your Shopping Cart</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body" id="cartItems">
+              <p class="text-muted text-center">Your cart is empty.</p>
+            </div>
+            <div class="modal-footer">
+              <h6 class="me-auto">Total: ₹<span id="cartTotal">0</span></h6>
+              <button type="button" class="btn btn-success">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light" id="features">
+      <div class="container text-center">
+        <h2 class="fw-bold text-primary mb-4">Why Shop With Us?</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-icon">🚚</div>
+            <h5>Fast & Free Delivery</h5>
+            <p>
+              Get your orders delivered quickly and safely to your doorstep.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-icon">💳</div>
+            <h5>Secure Payment</h5>
+            <p>
+              We ensure 100% secure transactions for a smooth checkout
+              experience.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-icon">⭐</div>
+            <h5>Quality Products</h5>
+            <p>
+              Only top-rated items carefully selected for our valued customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review Section -->
+    <section class="py-5" id="reviews">
+      <div class="container">
+        <h2 class="text-center fw-bold text-primary mb-4">Customer Reviews</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="review">
+              <p>Amazing quality</p>
+              <h6 class="mt-3 fw-bold">– Prathamesh Matre</h6>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="review">
+              <p>Customer service was great</p>
+              <h6 class="mt-3 fw-bold">– Akshay Matre</h6>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="review">
+              <p>Affordable prices and amazing offers.</p>
+              <h6 class="mt-3 fw-bold">– Pratik Matre</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 ShopEase | Designed by <b>Pratik Ramesh Matre</b></p>
+      <p>
+        <a href="https://www.linkedin.com/in/pratik-matre" target="_blank"
+          >LinkedIn</a
+        >
+        | <a href="mailto:matrepratik8728@gmail.com">Email</a>|
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
